@@ -1,0 +1,24 @@
+.main__empty-cart {
+  cursor: pointer;
+  animation: cart .4s linear forwards .1s;
+  
+  @keyframes cart {
+    0% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -200%) scaleY(.9);
+    }
+
+    80% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%) scaleY(.9);
+    }
+
+    100% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%) scaleY(1);
+    }
+  }
+}
