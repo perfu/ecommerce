@@ -72,10 +72,10 @@ a, a:visited, a:active {
   padding: 1.6rem;
 }
 
-.main__empty-cart {
+.toggle {
   cursor: pointer;
-  -webkit-animation: cart 0.4s linear forwards 0.1s;
-          animation: cart 0.4s linear forwards 0.1s;
+  -webkit-animation: cart 0.3s linear forwards 0.1s;
+          animation: cart 0.3s linear forwards 0.1s;
 }
 @-webkit-keyframes cart {
   0% {
@@ -137,7 +137,7 @@ a, a:visited, a:active {
 
 .main__div1 .main__empty-cart {
   position: absolute;
-  display: none;
+  top: -500%;
   width: 97%;
   height: 85%;
   background-color: white;
