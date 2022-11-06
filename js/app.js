@@ -14,7 +14,6 @@ const cartDropEl = document.querySelector(".main__empty-cart")
 
 cartSvgEl.addEventListener("click", () => {
   cartDropEl.classList.toggle("toggle")
-  
 })
 
 
