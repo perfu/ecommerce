@@ -1,24 +1,51 @@
-.toggle {
+.main__empty-cart {
   cursor: pointer;
-  animation: cart .3s linear forwards .1s;
-  
-  @keyframes cart {
-    0% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -200%) scaleY(.9);
-    }
+  animation: cartUp .3s linear forwards .1s;
+  // transition: .3s linear forwards .1s;
+  visibility: hidden;
+}
 
-    80% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -40%) scaleY(.9);
-    }
+.main__empty-cart.toggle {
+  animation: cartDown .3s linear forwards .1s;
+  visibility: visible;
+}
 
-    100% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -55%) scaleY(1);
-    }
+@keyframes cartDown {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%) scaleY(.9);
+  }
+
+  80% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%) scaleY(.9);
+  }
+
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%) scaleY(1);
+  }
+}
+
+@keyframes cartUp {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%) scaleY(1);
+  }
+
+  80% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%) scaleY(.9);
+  }
+
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%) scaleY(.9);
   }
 }

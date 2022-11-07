@@ -1,5 +1,6 @@
 const cartSvgEl = document.querySelector(".header__div2-svg") 
 const cartDropEl = document.querySelector(".main__empty-cart")
+const mainBtnEl = document.querySelector(".main__button")
 
 // cartSvgEl.addEventListener("click", () => {
   
@@ -14,6 +15,24 @@ const cartDropEl = document.querySelector(".main__empty-cart")
 
 cartSvgEl.addEventListener("click", () => {
   cartDropEl.classList.toggle("toggle")
+  
+  // if(cartDropEl.style.visibility !== "hidden") {
+  //   cartDropEl.style.visibility = "hidden"
+  // }
+  //  else {
+  //   cartDropEl.style.visibility = "visible"
+  //  }
 })
+
+// cartSvgEl.addEventListener("click", () => {
+  
+//   if(cartDropEl.style.visibility !== "hidden") {
+//     cartDropEl.classList.toggle("toggle")
+//   }
+//   else {
+//     cartDropEl.style.display = "inline"
+//   }
+  
+// })
 
 
