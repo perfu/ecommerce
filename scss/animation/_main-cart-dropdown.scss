@@ -1,6 +1,6 @@
 .main__empty-cart {
   cursor: pointer;
-  animation: cartUp .3s linear forwards .1s;
+  -webkit-animation: .3s linear forwards .1s;
   // transition: .3s linear forwards .1s;
   visibility: hidden;
 }

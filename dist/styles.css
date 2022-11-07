@@ -74,8 +74,7 @@ a, a:visited, a:active {
 
 .main__empty-cart {
   cursor: pointer;
-  -webkit-animation: cartUp 0.3s linear forwards 0.1s;
-          animation: cartUp 0.3s linear forwards 0.1s;
+  -webkit-animation: 0.3s linear forwards 0.1s;
   visibility: hidden;
 }
 
