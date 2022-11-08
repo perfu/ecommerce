@@ -2,37 +2,27 @@ const cartSvgEl = document.querySelector(".header__div2-svg")
 const cartDropEl = document.querySelector(".main__empty-cart")
 const mainBtnEl = document.querySelector(".main__button")
 
-// cartSvgEl.addEventListener("click", () => {
-  
-//   if(cartDropEl.style.display !== "none") {
-//     cartDropEl.style.display = "none"
-//   }
-//   else {
-//     cartDropEl.style.display = "inline"
-//   }
-  
-// })
+let i = 0;
 
 cartSvgEl.addEventListener("click", () => {
-  cartDropEl.classList.toggle("toggle")
-  
-  // if(cartDropEl.style.visibility !== "hidden") {
-  //   cartDropEl.style.visibility = "hidden"
-  // }
-  //  else {
-  //   cartDropEl.style.visibility = "visible"
-  //  }
+
+  if(i === 0) {
+    console.log(i + " toggleDown")
+    cartDropEl.classList.toggle("toggleDown")
+    cartDropEl.style.visibility = "visible"
+    i++
+    console.log(i + " visible")
+  }
+  else if(i === 1){
+    console.log(i + " toggleUp")
+    cartDropEl.classList.toggle("toggleUp")
+    cartDropEl.style.visibility = "visible"
+    i = 0
+    console.log(i + " toggle")
+  }
+  else {
+    console.log("error!")
+  }
+  console.log(i + " end")
 })
-
-// cartSvgEl.addEventListener("click", () => {
-  
-//   if(cartDropEl.style.visibility !== "hidden") {
-//     cartDropEl.classList.toggle("toggle")
-//   }
-//   else {
-//     cartDropEl.style.display = "inline"
-//   }
-  
-// })
-
 

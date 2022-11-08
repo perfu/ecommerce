@@ -72,16 +72,15 @@ a, a:visited, a:active {
   padding: 1.6rem;
 }
 
-.main__empty-cart {
+.main__empty-cart.toggleUp {
   cursor: pointer;
-  -webkit-animation: 0.3s linear forwards 0.1s;
-  visibility: hidden;
+  -webkit-animation: cartUp 0.3s linear forwards 0.1s;
+          animation: cartUp 0.3s linear forwards 0.1s;
 }
 
-.main__empty-cart.toggle {
+.toggleDown {
   -webkit-animation: cartDown 0.3s linear forwards 0.1s;
           animation: cartDown 0.3s linear forwards 0.1s;
-  visibility: visible;
 }
 
 @-webkit-keyframes cartDown {
@@ -123,7 +122,7 @@ a, a:visited, a:active {
   0% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%) scaleY(1);
+    transform: translate(-50%, -55%) scaleY(1);
   }
   80% {
     top: 50%;
@@ -140,7 +139,7 @@ a, a:visited, a:active {
   0% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%) scaleY(1);
+    transform: translate(-50%, -55%) scaleY(1);
   }
   80% {
     top: 50%;
